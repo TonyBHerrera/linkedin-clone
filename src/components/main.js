@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PostModal from "./postModal";
 
 const Main = (props) => {
   return (
@@ -92,6 +93,7 @@ const Main = (props) => {
           </SocialActions>
         </Article>
       </div>
+      <PostModal />
     </Container>
   );
 };
@@ -275,6 +277,12 @@ const SocialActions = styled.div`
     align-items: center;
     padding: 8px;
     color: #0a66c2;
+
+    @media (min-width: 786px) {
+      span {
+        margin-left: 8px;
+      }
+    }
   }
 `;
 export default Main;
